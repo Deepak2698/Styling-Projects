@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Kool Kart</title>
+
+        <!-- Bootstrap CDN (CSS) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+        <!-- Bootstrap CDN (Js) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap CDN (Icon) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    </head>
+    <body>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container">
+                
+                <a class="navbar-brand">
+                    <h1 class="logo">Kool Kart</h1>
+                </a>
+
+                <!-- Navbar Contents -->
+                <div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="./homepage.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown mx-4">
+                            <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#">Courses</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./frontend.html">Frontend Courses</a></li>
+                                <li><a class="dropdown-item active" href="./backend.html">Backend Courses</a></li>
+                                <li><a class="dropdown-item" href="#">Database Courses</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="./faq.html">FAQs</a>
+                        </li>
+
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="./contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Products -->
+        <div class="container">
+            <h2 class="my-2"> Backend Courses </h2>
+            <div class="row my-4 mx-3">
+                
+                    <!-- Product - 01 -->
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/Nodejs-Application-Development.webp" class="card-img-top p-4" alt="html logo" style="margin-top: 58px; margin-bottom: 35px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Node</h5>
+                                <p class="card-text">Hypertext Markup Language</p>
+                                <a href="#" id="node" onclick="load(this)" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-primary">Learn More...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product - 02 -->
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/top_20170628095038.png" class="card-img-top" alt="css logo" style="padding: 1px;
+                            margin-top: 23px;
+                            margin-bottom: 18px;">
+                            <div class="card-body">
+                                <h5 class="card-title">PhP</h5>
+                                <p class="card-text">PHP is a general-purpose scripting language geared towards web development.</p>
+                                <a href="#" id="PhP" onclick="load(this)" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-primary">Learn More...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product - 03 -->
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/d1326ca6cca8038cd115a061b4e2b3bc.png" class="card-img-top p-4" alt="js logo" style="padding: 20px; margin-bottom: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Python</h5>
+                                <p class="card-text">Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.</p>
+                                <a href="#" id="Python" onclick="load(this)" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-primary">Learn More...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" tabindex="-1" id="Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div id="content"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Content -->
+        <footer class="fixed-bottom bg-dark text-light text-center fs-5">
+            <p>
+                Author: Deepak <br>
+                <a href="mailto:trainer@edureka.co" class="text-light">trainer</a>
+            </p>
+            <div class="fs-2 mb-2">
+                <i class="bi bi-linkedin text-primary"></i>
+                <i class="bi bi-meta text-primary mx-3"></i>
+                <i class="bi bi-twitter text-info mx-3"></i>
+                <i class="bi bi-youtube text-danger mx-3"></i>
+            </div>
+        </footer>
+
+        <!-- Java Script -->
+        <script>
+            function load(subject) {
+
+                // Creating an Object/ Request
+                var xhttp = new XMLHttpRequest();
+
+                // Define/ Initialize the function
+                xhttp.onload = function() {
+                    document.getElementById("content").innerHTML = xhttp.responseText;
+                }
+
+                // Sending the Requests
+
+                switch(subject.id){
+
+                    case 'Python': xhttp.open("GET", "Courses/python.html", true)
+                                    break;
+
+                    case 'PhP': xhttp.open("GET", "Courses/php.html", true)
+                                    break;
+
+                    case 'node': xhttp.open("GET", "Courses/node.html", true)
+                                    break;
+                }
+
+                // Send the request to open
+                xhttp.send();
+            }
+        </script>
+    </body>
+</html>

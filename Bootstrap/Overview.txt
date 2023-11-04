@@ -1,0 +1,21 @@
+Module  - 06
+
+Bootstrap 5.3 - Latest Version
+    - It is a free font-end CSS framework.
+    - It includes HTML & CSS based responsive design templates.
+
+    - How do we connect with Bootstrap
+        - CDN (Content Delivery Network) Link (jsDelivr)
+        - Download and host
+
+    - Navigation Bar
+
+    - Anatomy of Bootstrap
+        - Color
+        - Spacing
+
+    - Grids
+
+    - Carousel
+
+    - Modals

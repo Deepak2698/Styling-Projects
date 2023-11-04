@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>CSS - 01</title>
+
+        <!-- Google FONTS CDN -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <h2> Text Effects </h2>
+
+            <h4>Text Shadows</h4>
+            <!--
+                SYNTAX
+                    text-shadow: <horizontal> <vertical> <blur> <color>;
+            -->
+
+            <p>Plain Text</p>
+
+            <p style="text-shadow: 5px 4px 3px red;">
+                Text Shadow
+            </p>
+
+        <hr>
+
+            <h4> Word Wrap </h4>
+
+            <p style="border: 2px solid mediumaquamarine;
+                      width: 150px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nostrum consecteturconsecteturconsecteturconsectetur esse, harum nemo tenetur. Tempora libero veritatis nesciunt, voluptatibus beatae ratione in quae, aut dolore deleniti quos provident culpa.
+            </p>
+
+            <p style="word-wrap: break-word;
+                      border: 2px solid mediumaquamarine;
+                      width: 150px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nostrum consecteturconsecteturconsecteturconsectetur esse, harum nemo tenetur. Tempora libero veritatis nesciunt, voluptatibus beatae ratione in quae, aut dolore deleniti quos provident culpa.
+            </p>
+
+        <hr>
+
+        <h4> Fonts </h4>
+
+        <!--
+            Formats of Fonts:
+                - TTF (True Type Fonts)
+                    Used in both MAC Os & Windows OS
+
+                - OTF (Open Type Fonts)
+                    Scalable Computer Fonts
+
+                - WOFF (Web Open Font Format)
+                    Used for Web Pages
+        -->
+
+            <style>
+                @font-face {
+                    font-family: Trutype;
+                    src: url(./Assets/fonts/ttf/Amatic-Bold.ttf);
+                }
+
+                @font-face {
+                    font-family: Opentype;
+                    src: url(./Assets/fonts/otf/Quicksand-Italic.otf);
+                }
+
+                @font-face {
+                    font-family: Web-Opentype;
+                    src: url(./Assets/fonts/woff/AlexBrush-Regular.woff);
+                }
+            </style>
+
+        <p> Default Font </p>
+
+        <p style="font-family: Trutype;"> An Example of TTF </p>
+
+        <p style="font-family: Opentype;"> An <span style="font-family: 'Bungee Spice', cursive;">Example</span> of OTF </p>
+
+        <p style="font-family: Web-Opentype;"> An Example of WOFF </p>
+
+        <p style="font-family: 'Bungee Spice', cursive;">Google's Imported Font</p>
+
+        
+
+
+
+
+    </body>
+</html>

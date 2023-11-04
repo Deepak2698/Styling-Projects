@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS - 02</title>
+    </head>
+    <body>
+        <h1>Selectors</h1>
+
+        <!-- Element Selector -->
+
+        <style>
+            h4 {
+                color: red;
+            }
+        </style>
+
+        <h4>Element Selector</h4>
+
+        <!-- ID Selector -->
+        
+        <style>
+            #name {
+                color: darkgoldenrod;
+            }
+        </style>
+        
+        <h5 id="name">ID Selector</h5>
+        <!--
+            - id is used for unique identification only.
+            - No other tag should have the same id.
+            - Id is represnted in CSS selector with a '#'.
+        -->
+
+        <!-- Class Selector -->
+        
+        <style>
+            .name {
+                color: darksalmon;
+            }
+        </style>
+        
+        <h5 class="name"> Class Selector </h5>
+        <!--
+            - class is used for common identification.
+            - Other tags can have the same class also.
+            - Class is represnted in CSS selector with a '.'
+        -->
+
+        <!-- Universal Selector -->
+        
+        <style>
+            * {
+                font-size: 25px;
+                font-weight: bolder;
+                color: brown;
+            }
+        </style>
+        
+        <p>Universal Selector</p>
+        <!--
+            - Universal selector is used only once in a web page.
+            - Universal selector is represnted in CSS with a '*'
+        -->
+
+        <!-- Multiple/ Group Selector -->
+        
+        <style>
+            #name, #multi, h4, .name {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        </style>
+        
+        <h5 id="multi">Multiple/ Group Selector</h5>
+        <!--
+            - It is used to add multiple selectors to have a common styling.
+            - Each selectors are seperated by a COMMA ','
+        -->
+    </body>
+</html>

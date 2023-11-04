@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Kool Kart</title>
+
+        <!-- Bootstrap CDN (CSS) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+        <!-- Bootstrap CDN (Js) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap CDN (Icon) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <style>
+            .banner-text-box {
+                text-align: center;
+                position: absolute;
+                left: 30%;
+                top: 30%;
+                color: #fff;
+            }
+
+            .banner-text {
+                font-size: 60px !important;
+            }
+
+            .banner_cover {
+                background-image: linear-gradient(100deg, rgb(139, 245, 240), rgb(247, 238, 135));
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container">
+                
+                <a class="navbar-brand">
+                    <h1 class="logo">Kool Kart</h1>
+                </a>
+
+                <!-- Navbar Contents -->
+                <div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-4">
+                            <a class="nav-link active" href="./homepage.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown mx-4">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Courses</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./frontend.html">Frontend Courses</a></li>
+                                <li><a class="dropdown-item" href="./backend.html">Backend Courses</a></li>
+                                <li><a class="dropdown-item" href="#">Database Courses</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="./faq.html">FAQs</a>
+                        </li>
+
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="./contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Carousel -->
+        
+        <div id="carouselExampleAutoplaying" class="carousel slide banner_cover" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                                
+                <div class="carousel-item active">
+                    <img src="./Assets/img/building-banner.jpg" class="d-block w-100" alt="building">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Assets/img/Hava Mahal-banner.jpg" class="d-block w-100" alt="Hava Mahal">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Assets/img/Pyramid-banner.jpg" class="d-block w-100" alt="Pyramid">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Banner Content -->
+        <div class="banner-text-box">
+            <h2 class="banner-text text-dark">Welcome to Kool Kart !!</h2>
+        </div>
+
+        <!-- Footer Content -->
+        <footer class="fixed-bottom bg-dark text-light text-center fs-5">
+            <p>
+                Author: Deepak <br>
+                <a href="mailto:trainer@edureka.co" class="text-light">trainer</a>
+            </p>
+            <div class="fs-2 mb-2">
+                <i class="bi bi-linkedin text-primary"></i>
+                <i class="bi bi-meta text-primary mx-3"></i>
+                <i class="bi bi-twitter text-info mx-3"></i>
+                <i class="bi bi-youtube text-danger mx-3"></i>
+            </div>
+        </footer>
+    </body>
+</html>

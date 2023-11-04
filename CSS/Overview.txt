@@ -1,0 +1,56 @@
+Module - 03
+
+CSS     - Cascading Style Sheet
+CSS 3   - Latest Version
+
+    - Defines the styles (desighn, layout, and variations) for web page's display.
+
+    - Insert CSS to HTML
+        -> Inline CSS
+        -> Internal CSS
+        -> External CSS
+
+    => SYNTAX
+        h6                  -> Selector
+        {                   -> Defines the declaration starting block
+        color: darkGreen;   -> Property(color) declaration, of the Value(darkGreen),
+                               Property and values are always seperated by a COLON(:),
+                               Each declaration are seperated by a SEMI COLON(;).
+        }                   -> Defines the declaration end block
+
+    - Selectors
+        5 Types of Selectors;
+            - Element Selector (HTML tag Element)
+            - ID Selectors (HTML tag's ID)
+            - Class Selector (HTML tag's Class)
+            - Universal Selector (The complete web page)
+            - Multiple/ Group Selector (More than one HTML element, id, or class can be selected.)
+
+
+    - Links
+    - Text Alignment
+    - Text Transform
+    - Box Model
+        - Margin
+        - Padding
+    - Visibility
+    - Background Image
+
+    - Gradients
+        - Linear
+        - Radial
+        - Conic
+
+    - Media Queries   
+
+    - Display 
+    - Position
+
+
+    # 3 most important topics in CSS
+
+        1 - Box Model
+        2 - Background Image and color
+        3 - Position
+        4 - Display
+        5 - Media Queries

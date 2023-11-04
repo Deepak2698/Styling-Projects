@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstrap CDN (CSS) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        
+        <!-- Boostrap CDN (Js) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        
+        <title>Bootstrap 02</title>
+
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <!--
+                - navbar    : wrapping a complete navigation bar
+                - bg-primary: BackGround Color & primary stands for Blue color
+                - navbar-expand-lg  : Navbar act as responisve
+            -->
+
+            <div class="container-fluid">
+                <!--
+                    - container         : Contents to keep inside it, with fixed values.
+                    - container-fluid   : Contents to keep inside it, with 100% width at all breakpoints.
+                -->
+
+                <a class="navbar-brand" href="#"> Navbar </a>
+                    <!--
+                        - navbar-brand  : Using the brand related values or images
+                    -->
+            </div>
+
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse">
+                <!--
+                    - collapse          : To make the navbar collapse after a breakpoint.
+                    - navbar-collpase   : Specifying the navbar to be collapsing.
+                -->
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!--
+                        - navbar-nav        : For navigation height of 100%
+                        - me-auto           : Automatically defines the margin right.
+                        - mb-2              : Margin Bottom with value 2 from BS.
+                        - mb-lg-0           : Margin bottom for Large Screen to be displayed 0 or default from BS.
+                    -->
+
+                    <!-- Home Link -->
+                    <li class="nav-item">  <!-- Navigation elements-->
+                        <a class="nav-link">Home</a>
+                        <!--
+                            - nav-link  : Giving a navigation link style.
+                        -->
+                    </li>
+
+                    <!-- Products (Drop Down) Link -->
+                    <li class="nav-item dropdown">  <!-- dropdown -> to have drop down style from BS -->
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            Products
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item">Books</a></li>
+                            <li><a class="dropdown-item">Mobiles</a></li>
+                            <li><a class="dropdown-item">Cloths</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact Us Link -->
+                    <li class="nav-item">  <!-- Navigation elements-->
+                        <a class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </body>
+</html>

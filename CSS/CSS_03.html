@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS - 03</title>
+    </head>
+    <body>
+
+        <h2>Links</h2>
+
+        <style>
+            /* unvisited Links */
+            a:link {
+                color: darkorange;
+            }
+
+            /* Visited Link */
+            a:visited {
+                color: darkseagreen;
+            }
+
+            /* Selected Link */
+            a:active {
+                color: greenyellow;
+            }
+
+            /* Mouse Over Link */
+            a:hover {
+                color: white;
+            }
+        </style>
+
+        <a href="https://www.zomato.com/india" target="_blank">Welcome</a>
+        <a href="https://www.amazon.com" target="_blank">Amazon</a>
+
+                
+        <hr>
+
+        <h2>Text Align</h2>
+
+        <div style="text-align: left;
+                    display: inline-block;
+                    border: 1px solid seagreen;
+                    width: 200px;">
+            <h3>Left Align</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem culpa nesciunt voluptas odit odio. Distinctio ipsam id, hic ipsum obcaecati nemo facilis laudantium ea doloremque exercitationem beatae deleniti recusandae ullam?</p>
+        </div>
+
+        <div style="text-align: right;
+                    display: inline-block;
+                    border: 1px solid seagreen;
+                    width: 200px;">
+            <h3>Right Align</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem culpa nesciunt voluptas odit odio. Distinctio ipsam id, hic ipsum obcaecati nemo facilis laudantium ea doloremque exercitationem beatae deleniti recusandae ullam?</p>
+        </div>
+
+        <div style="text-align: center;
+                    display: inline-block;
+                    border: 1px solid seagreen;
+                    width: 200px;">
+            <h3>Center Align</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem culpa nesciunt voluptas odit odio. Distinctio ipsam id, hic ipsum obcaecati nemo facilis laudantium ea doloremque exercitationem beatae deleniti recusandae ullam?</p>
+        </div>
+
+        <div style="text-align: justify;
+                    display: inline-block;
+                    border: 1px solid seagreen;
+                    width: 200px;">
+            <h3>Justify Align</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem culpa nesciunt voluptas odit odio. Distinctio ipsam id, hic ipsum obcaecati nemo facilis laudantium ea doloremque exercitationem beatae deleniti recusandae ullam?</p>
+        </div>
+
+        <hr>
+
+        <h2> Text Transform </h2>
+
+        <p style="text-transform: uppercase;">
+            Converting lowercase LeTTER text to capital.
+        </p>
+
+        <p style="text-transform: lowercase;">
+            Converting capital LeTTER text to LowerCASE.
+        </p>
+
+        <p style="text-transform: capitalize;">
+            Converting text to capitalIZED FORM.
+        </p>
+
+        <hr>
+
+        
+        <h2> CSS BOX Model </h2>
+        <!--
+            - Content   : The area of the content in the box.
+            - Padding   : The area between the border and the content.
+            - Border    : The area between the padding and margin.
+            - Margin    : The outer area of the box.
+        -->
+        <div style="background-color: darkorange;
+                    width: 200px;
+                    
+                    padding: 10px;
+                    border: 2px dashed rgb(25, 41, 2);">
+            <p style="text-align: center;
+                      background-color: blue;
+                      color: white;
+                      border: 1px solid red;
+                      padding: 10px;
+                      margin: 10px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quod magni debitis earum nihil at fugiat dolore natus vitae, consequuntur id vero voluptates pariatur veniam cum eveniet exercitationem? Optio, temporibus.
+            </p>
+        </div>
+
+        <hr>
+
+        <em>Abhishek</em>
+
+        <h2> Visibility </h2>
+
+        <!-- Visibility: Hidden -->
+        <div style="background-color: darkorange;
+                    width: 200px;
+                    display: inline-block;
+                    border: 4px solid rgb(25, 41, 2);">
+            <p>Before the image.</p>
+            <img src="./Assests/FS.png" width="100%" style="visibility: hidden;">
+            <p>After the image.</p>
+        </div>
+
+        <!-- Display: none -->
+        <div style="background-color: darkorange;
+                    width: 200px;
+                    display: inline-block;
+                    border: 4px solid rgb(25, 41, 2);">
+            <p>Before the image.</p>
+            <img src="./Assests/FS.png" width="100%" style="display: none;">
+            <p>After the image.</p>
+        </div>
+
+
+
+    </body>
+</html>

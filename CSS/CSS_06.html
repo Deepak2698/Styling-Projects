@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Media Queries</title>
+
+        <!-- External CSS File -->
+        <link rel="stylesheet" href="./media.css" />
+    </head>
+    <body>
+        <h2> Media Queries </h2>
+
+        <!--
+            Media Queries
+
+            SYNTAX
+                @media screen (min-width: 320px) and (max-width: 760px)
+
+                    - @media            -> Declaration for a media Query (Manadatory)
+                    - screen            -> Media Type
+                    - min-width         -> Media Feature (Minimum Width of the Screen)
+                    - and               -> Operator
+                    - max-width         -> Media Feature (Maximum Width of the Screen)
+
+                - Media Type:
+                    - All           -> All Mediatype devices
+                    - Screen        -> Screen Type or the screen resolution
+                    - Print         -> Printers
+
+                - Operators:
+                    - AND           -> Satisfies both the conditions
+                    - OR /,(comma)  -> Satisfies either of the conditions
+                    - NOT           -> Satisfies neither of the conditions
+        -->
+
+        <!-- Screen Example -->
+        <div class="div-bg">
+            
+            <p class="less">Div container <br> 
+                Width is less than 500px </p>
+
+            <p class="more">Div container <br> 
+                Width is more than 500px </p>
+
+        </div>
+
+        <!-- Print Example -->
+        <div class="print">
+            <table style="width: 100%;">
+                <tr>
+                    <th>
+                        Country
+                    </th>
+                    <th>
+                        State
+                    </th>
+                    <th>
+                        Population
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        India
+                    </td>
+                    <td>
+                        Mumbai
+                    </td>
+                    <td>
+                        2,584
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Australia
+                    </td>
+                    <td>
+                        Sydney
+                    </td>
+                    <td>
+                        1,524
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        US
+                    </td>
+                    <td>
+                        Washington
+                    </td>
+                    <td>
+                        748
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
+</html>

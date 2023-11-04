@@ -1,0 +1,196 @@
+.imageText {
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    width: 99px;
+    height: 99px;
+    font-family: Poppins;
+    font-size: 70px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.51;
+    letter-spacing: normal;
+    text-align: left;
+    color: #eb2929;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin: auto;
+}
+
+.headerText {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+    text-align: center;
+}
+
+.locationOptions {
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.locationDropDown {
+    width: 245px;
+    height: 40px;
+    background-color: white;
+    padding-left: 15px;
+    border: none;
+}
+
+.restaurantSearch {
+    width: 477px;
+    height: 40px;
+    background-color: white;
+    padding-left: 15px;
+    border: none;
+    margin-left: 15px;
+}
+
+.quickSearchOptions {
+    margin: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.quickSearchHeader {
+    height: 43px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.quickSearchSubHeader {
+    height: 25px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8c96ab;
+}
+
+.quickSearchBoxes {
+
+}
+
+.quickSearchBox {
+    width: 31%;
+    height: 160px;
+    box-shadow: 0 3px 6px 0 rgba(226, 32, 32, 0.16);
+    background-color: white;
+    display: inline-block;
+    margin: 12px;
+    position: relative;
+}
+
+.quickSearchBox > img {
+    width: 160px;
+    height: 160px;
+    margin: 0 29px 0 0;
+}
+
+.quickSearchDesc {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    width: 137px;
+}
+
+.quickSearchDesc > h3 {
+    height: 25px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.quickSearchDesc > p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8c96ab;
+}
+
+/* 
+(1) Screen size / viewport size upto 740px
+
+    .quickSearchDesc {
+        right: 20px;
+    }
+
+(2) Screen size / viewport size between 741px and 1360px
+
+    .quickSearchDesc {
+        right: 60px;
+    }
+
+(3) Screen size / viewport size greater than 1360px
+
+    .quickSearchDesc {
+        right: 80px;
+    }
+
+Solution:
+(1) Pure CSS solution - media queries
+(2) Use external framework like bootstrap to solve it
+*/
+
+@media only screen and (max-width: 740px) {
+    .quickSearchDesc {
+        right: 20px;
+    }
+
+    .quickSearchBox > img {
+        margin: 0 20px 0 0;
+    }
+}
+
+@media only screen and (min-width: 741px) and (max-width: 1360px) {
+    .quickSearchDesc {
+        right: 60px;
+    }
+}
+
+@media only screen and (min-width: 1361px) {
+    .quickSearchDesc {
+        right: 80px;
+    }
+
+    .quickSearchBox > img {
+        margin: 0 40px 0 0;
+    }
+}
